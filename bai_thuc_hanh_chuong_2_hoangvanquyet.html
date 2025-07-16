@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Sinh viên</title>
+</head>
+<body>
+
+  <h2>Thêm Sinh Viên</h2>
+
+  <form>
+    <table cellpadding="5" cellspacing="0" border="0">
+      <tr>
+        <td align="right"><label for="maSV">Mã sinh viên:</label></td>
+        <td><input type="text" id="maSV" name="maSV" required></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="hoTen">Họ và tên:</label></td>
+        <td><input type="text" id="hoTen" name="hoTen" required></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td align="right"><label for="ngaySinh">Ngày sinh:</label></td>
+        <td><input type="date" id="ngaySinh" name="ngaySinh"></td>
+      </tr>
+      <tr>
+        <td align="right">Giới tính:</td>
+        <td>
+          <input type="radio" id="nam" name="gioiTinh" value="Nam">
+          <label for="nam">Nam</label>
+          <input type="radio" id="nu" name="gioiTinh" value="Nữ">
+          <label for="nu">Nữ</label>
+        </td>
+      </tr>
+      <tr>
+        <td align="right" valign="top"><label for="ghiChu">Ghi chú:</label></td>
+        <td><textarea id="ghiChu" name="ghiChu" rows="4" cols="40"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Thêm sinh viên</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <h2>Danh Sách Sinh Viên</h2>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+        <th>Email</th>
+        <th>Giới tính</th>
+        <th>Ngày sinh</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>SV01</td>
+        <td>Hoàng Văn Quyết</td>
+        <td>hquyet190804@gmail.com</td>
+        <td>Nam</td>
+        <td>19/08/2004</td>
+        <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>SV02</td>
+        <td>Nguyễn Quang Khải</td>
+        <td>khai@gmail.com</td>
+        <td>Nam</td>
+        <td>01/01/2004</td>
+        <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>SV03</td>
+        <td>Lê Thị Thanh</td>
+        <td>thanh@gmail.com</td>
+        <td>Nữ</td>
+        <td>20/01/2004</td>
+        <td><a href="#">Sửa</a> | <a href="#">Xoá</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
