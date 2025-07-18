@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản Lý Sinh viên</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <h2 class="main-title">Quản Lý Sinh Viên</h2>
+
+  <div class="container">
+    <div class="form-container">
+      <h3>Thêm Sinh Viên</h3>
+      <form>
+        <div class="form-group">
+          <label for="maSV">Mã sinh viên:</label>
+          <input type="text" id="maSV" name="maSV" required>
+        </div>
+        <div class="form-group">
+          <label for="hoTen">Họ và tên:</label>
+          <input type="text" id="hoTen" name="hoTen" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="ngaySinh">Ngày sinh:</label>
+          <input type="date" id="ngaySinh" name="ngaySinh">
+        </div>
+        <div class="form-group">
+          <label>Giới tính:</label>
+          <div class="radio-group">
+            <input type="radio" id="nam" name="gioiTinh" value="Nam">
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" name="gioiTinh" value="Nữ">
+            <label for="nu">Nữ</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ghiChu">Ghi chú:</label>
+          <textarea id="ghiChu" name="ghiChu" rows="4"></textarea>
+        </div>
+        <button type="submit">Thêm sinh viên</button>
+      </form>
+    </div>
+
+    <div class="table-container">
+      <h3>Danh Sách Sinh Viên</h3>
+      <table class="student-table">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>SV01</td>
+            <td>Hoàng Văn Quyết</td>
+            <td>hquyet190804@gmail.com</td>
+            <td>Nam</td>
+            <td>19/08/2004</td>
+            <td>
+              <a href="#"><i class="fas fa-edit" style="color: orange;"></i></a>
+              <a href="#"><i class="fas fa-trash" style="color: red;"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>SV02</td>
+            <td>Nguyễn Quang Khải</td>
+            <td>khai@gmail.com</td>
+            <td>Nam</td>
+            <td>01/01/2004</td>
+            <td>
+              <a href="#"><i class="fas fa-edit" style="color: orange;"></i></a>
+              <a href="#"><i class="fas fa-trash" style="color: red;"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>SV03</td>
+            <td>Lê Thị Thanh</td>
+            <td>thanh@gmail.com</td>
+            <td>Nữ</td>
+            <td>20/01/2004</td>
+            <td>
+              <a href="#"><i class="fas fa-edit" style="color: orange;"></i></a>
+              <a href="#"><i class="fas fa-trash" style="color: red;"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
