@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản Lý Sinh Viên</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Quản Lý Sinh Viên</h1>
+  </header>
+
+  <div class="container">
+  
+    <div class="form-container">
+      <h3>Thêm Sinh Viên</h3>
+      <div id="thongBao" class="notification"></div>
+      <form id="studentForm">
+        <div class="form-group">
+          <label for="maSV">Mã sinh viên:</label>
+          <input type="text" id="maSV" name="maSV" required>
+        </div>
+        <div class="form-group">
+          <label for="hoTen">Họ và tên:</label>
+          <input type="text" id="hoTen" name="hoTen" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="ngaySinh">Ngày sinh:</label>
+          <input type="date" id="ngaySinh" name="ngaySinh" required>
+        </div>
+        <div class="form-group">
+          <label>Giới tính:</label>
+          <div class="radio-group">
+            <input type="radio" id="nam" name="gioiTinh" value="Nam">
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" name="gioiTinh" value="Nữ">
+            <label for="nu">Nữ</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ghiChu">Ghi chú:</label>
+          <textarea id="ghiChu" name="ghiChu" rows="4"></textarea>
+        </div>
+        <button type="submit" id="btnSave">Thêm sinh viên</button>
+      </form>
+    </div>
+
+    <div class="table-container">
+      <h3>Danh Sách Sinh Viên</h3>
+      <table class="student-table">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Giới tính</th>
+            <th>Ngày sinh</th>
+            <th>Ghi chú</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
